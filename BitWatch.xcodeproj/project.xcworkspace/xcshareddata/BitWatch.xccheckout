@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7EC52DA9-8239-4E32-906A-93A673939750</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>88CB65AC9F52D1A547E200E8FEB27886DC9E424B</key>
+		<string>https://github.com/Learnspree/WatchKitTutorial.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BitWatch.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>88CB65AC9F52D1A547E200E8FEB27886DC9E424B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Learnspree/WatchKitTutorial.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>88CB65AC9F52D1A547E200E8FEB27886DC9E424B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>88CB65AC9F52D1A547E200E8FEB27886DC9E424B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BitWatch-Starter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
