@@ -13,6 +13,15 @@
                         <label alignment="center" text="$0.00" id="iqF-h2-xyK">
                             <fontDescription key="font" type="system" weight="semibold" pointSize="30"/>
                         </label>
+                        <group width="1" alignment="left" id="vW1-a7-Iuh">
+                            <items>
+                                <imageView width="32" height="32" alignment="center" id="ZbE-BB-SAC"/>
+                                <label alignment="center" text="1 BTC" id="CEa-T4-dFo"/>
+                            </items>
+                        </group>
+                        <label alignment="center" verticalAlignment="bottom" text="Last Updated" id="iUy-ib-Fam">
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Refresh" id="Pnq-bb-Agm">
                             <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
                             <connections>
@@ -21,7 +30,9 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="lastUpdatedLabel" destination="iUy-ib-Fam" id="zMJ-fP-lOi"/>
                         <outlet property="priceLabel" destination="iqF-h2-xyK" id="zZa-iI-Djo"/>
+                        <outlet property="upDownImage" destination="ZbE-BB-SAC" id="xdN-vf-Wfg"/>
                     </connections>
                 </controller>
             </objects>

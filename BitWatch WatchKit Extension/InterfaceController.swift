@@ -17,7 +17,8 @@ class InterfaceController: WKInterfaceController {
     var updating = false
     
     @IBOutlet weak var priceLabel: WKInterfaceLabel!
-    
+    @IBOutlet weak var upDownImage: WKInterfaceImage!
+    @IBOutlet weak var lastUpdatedLabel: WKInterfaceLabel!
     
     @IBAction func refreshPrice() {
         update()
@@ -28,6 +29,8 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         updatePrice(tracker.cachedPrice())
+        upDownImage.setHidden(true)
+        updateDate(tracker.cachedDate())
     }
 
     override func willActivate() {
@@ -58,9 +61,30 @@ class InterfaceController: WKInterfaceController {
                 // 4
                 if error == nil {
                     self.updatePrice(price!)
+                    self.updateDate(NSDate())
+                    self.updateImage(originalPrice, newPrice: price!)
                 }
                 self.updating = false
             }
+        }
+    }
+    
+    private func updateDate(date: NSDate) {
+        self.lastUpdatedLabel.setText("Last updated \(Tracker.dateFormatter.stringFromDate(date))")
+    }
+    
+    private func updateImage(originalPrice: NSNumber, newPrice: NSNumber) {
+        if originalPrice.isEqualToNumber(newPrice) {
+            // 1
+            upDownImage.setHidden(true)
+        } else {
+            // 2
+            if newPrice.doubleValue > originalPrice.doubleValue {
+                upDownImage.setImageNamed("Up")
+            } else {
+                upDownImage.setImageNamed("Down")
+            }
+            upDownImage.setHidden(false)
         }
     }
 
